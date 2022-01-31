@@ -15,9 +15,9 @@
   ],
   "module": "dist/sdk-core.esm.js",
   "scripts": {
-    "prepare": "run-s build",
     "build": "tsdx build",
     "start": "tsdx watch",
+    "prepare": "run-s build",
     "test": "tsdx test",
     "prepublishOnly": "tsdx build"
   },

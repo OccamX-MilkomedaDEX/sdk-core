@@ -7,8 +7,7 @@
   "source": "src/index.ts",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "repository": "https://github.com/Uniswap/uniswap-sdk-core.git",
   "keywords": [

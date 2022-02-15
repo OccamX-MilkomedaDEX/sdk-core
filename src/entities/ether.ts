@@ -20,8 +20,8 @@ export class Ether extends NativeCurrency {
 
   private static _etherCache: { [chainId: number]: Ether } = {}
 
-  public static onChain(chainId: number): Ether {
-    return this._etherCache[chainId] ?? (this._etherCache[chainId] = new Ether(chainId))
+  public static onChain(chainId: number, symbol = 'ETH', name = 'Ether'): Ether {
+    return this._etherCache[chainId] ?? (this._etherCache[chainId] = new Ether(chainId, symbol, name))
   }
 
   public equals(other: Currency): boolean {
